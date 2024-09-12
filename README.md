@@ -3,6 +3,8 @@
 
 Are you a developer looking to enhance your conversational assistant's performance? Struggling with domain adaptation and incorrect answers? Look no further! Our self-paced, hands-on workshop on **Retrieval Augmented Fine-Tuning (RAFT)** using Azure OpenAI is here  https://aka.ms/raftworkshop to help you take your AI projects to the next level.
 
+This Hands-On Lab was heavily inspired by Cedric Vidal and Suraj Subramanian excellent [blog](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674) and github [reference implemenation](https://github.com/ShishirPatil/gorilla/tree/main/raft)
+
 In today's fast-paced world, having a conversational assistant that can accurately answer domain-specific questions is crucial. Whether you're working in banking, healthcare, or any other industry, RAFT can help you fine-tune your language models to provide precise and relevant answers. This workshop is designed to be educational and practical, giving you the tools and knowledge to implement RAFT effectively at your own pace.
 
 ### Lab Overview
@@ -23,21 +25,23 @@ Imagine you're a developer at a bank, tasked with improving a conversational ass
  We will use synthetic data generation techniquest to generate the documents. We will utilize Teacher **GPT-4o** / Student **GPT-4o mini** Model Training using Distillation. 
  Customers can leverage powerful large models as a teacher model to train small student through distillation, resulting in tailored models ready for use in domain-specific use cases
  
- Distillation Steps:
+ **Distillation Steps:**
 
-1. Teacher Model: The large model generates synthetic data predictions – knowledge transfer
+1. **Teacher Model**: The large model generates synthetic data predictions – knowledge transfer
 
-2. Student Model: The smaller model is trained to mimic the behavior of the teacher model by learning from data prediction outputs. The student model is typically much smaller and faster than the teacher model
+2. **Student Model**: The smaller model is trained to mimic the behavior of the teacher model by learning from data prediction outputs. The student model is typically much smaller and faster than the teacher model
 
 Training Data - student model uses the teacher’s predictions as training data, which can include both labeled and unlabeled data.
 
-You'll get to work with your data or choose a sample pdf document included in repo.
+Want to learn more details about RAFT?See the arxiv.org paper: RAFT: Adapting Language Model to Domain Specific RAG https://arxiv.org/html/2403.10131v1
 
 ### Hands-On Lab:
 
+You'll get to work with your data or choose a sample pdf document included in repo.
+
 1. **Pre-requisites and Setup**
    - How to set up your environment and install necessary packages.
-   - Creating a Teacher **GPT-4o** / Student **GPT-4o mini** Model deployments on Azure.
+   - Creating a **Teacher GPT-4o / Student GPT-4o mini** Model deployments on Azure.
 
 2. **Step 1 – Prepare/Generate synthetic training dataset**
    - Collect Domain-Specific Documents: Gather documents relevant to the domain you want to specialize the LLM
