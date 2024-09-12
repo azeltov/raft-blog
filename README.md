@@ -60,6 +60,7 @@ You'll get to work with your data or choose a sample pdf document included in re
    - 
 3. **Step 3 –  Model evaluation**
 
+![alt text](images/bank_eval.png)
 
 ### How to Get Started
 
@@ -74,4 +75,6 @@ Get started now and take the first step towards mastering domain-specific AI wit
 ---
 References:
 
-[2006.05525] Knowledge Distillation: A Survey (arxiv.org) https://arxiv.org/abs/2006.05525
+* [2006.05525] Knowledge Distillation: A Survey (arxiv.org) https://arxiv.org/abs/2006.05525
+* RAFT: Adapting Language Model to Domain Specific RAG https://arxiv.org/html/2403.10131v1
+* RAFT:  A new way to teach LLMs to be better at RAG  https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674
