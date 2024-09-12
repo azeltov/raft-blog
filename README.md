@@ -33,7 +33,7 @@ Training Data - student model uses the teacher’s predictions as training data,
 
 You'll get to work with your data or choose a sample pdf document included in repo.
 
-### Hands-On Lab: What You'll Learn
+### Hands-On Lab:
 
 1. **Pre-requisites and Setup**
    - How to set up your environment and install necessary packages.
@@ -57,7 +57,7 @@ You'll get to work with your data or choose a sample pdf document included in re
    - Monitor the fine tuning job
    - Analyze the fine tuned model in Azure OpenAI Studio
    - Create a new deployment with the fine tuned model
-   - 
+   
 3. **Step 3 –  Model evaluation**
 
 ![alt text](images/bank_eval.png)
