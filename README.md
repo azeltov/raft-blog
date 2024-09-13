@@ -3,9 +3,9 @@
 
 Are you a developer looking to enhance your conversational assistant's performance? Struggling with domain adaptation and incorrect answers? Look no further! Our self-paced, hands-on workshop on **Retrieval Augmented Fine-Tuning (RAFT)** using Azure OpenAI is here  https://aka.ms/aoai-raft-workshop to help you take your AI projects to the next level.
 
-This Hands-On Lab was heavily inspired by Cedric Vidal and Suraj Subramanian excellent [blog](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674) and github [reference implemenation](https://github.com/ShishirPatil/gorilla/tree/main/raft)
-
 In today's fast-paced world, having a conversational assistant that can accurately answer domain-specific questions is crucial. Whether you're working in banking, healthcare, or any other industry, RAFT can help you fine-tune your language models to provide precise and relevant answers. This workshop is designed to be educational and practical, giving you the tools and knowledge to implement RAFT effectively at your own pace.
+
+This Hands-On Lab was heavily inspired by Cedric Vidal and Suraj Subramanian excellent [blog](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674) and github [reference implemenation](https://github.com/ShishirPatil/gorilla/tree/main/raft)
 
 ### Lab Overview
 
