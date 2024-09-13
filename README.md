@@ -1,7 +1,7 @@
 
 ## Unlock the Power of RAFT Fine-Tuning with Azure OpenAI: Explore Our New Self-Paced Hands-On Lab!
 
-Are you a developer looking to enhance your conversational assistant's performance? Struggling with domain adaptation and incorrect answers? Look no further! Our self-paced, hands-on workshop on **Retrieval Augmented Fine-Tuning (RAFT)** using Azure OpenAI is here  https://aka.ms/raftworkshop to help you take your AI projects to the next level.
+Are you a developer looking to enhance your conversational assistant's performance? Struggling with domain adaptation and incorrect answers? Look no further! Our self-paced, hands-on workshop on **Retrieval Augmented Fine-Tuning (RAFT)** using Azure OpenAI is here  https://aka.ms/aoai-raft-workshop to help you take your AI projects to the next level.
 
 This Hands-On Lab was heavily inspired by Cedric Vidal and Suraj Subramanian excellent [blog](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674) and github [reference implemenation](https://github.com/ShishirPatil/gorilla/tree/main/raft)
 
@@ -35,15 +35,19 @@ Training Data - student model uses the teacher’s predictions as training data,
 
 Want to learn more details about RAFT?See the arxiv.org paper: RAFT: Adapting Language Model to Domain Specific RAG https://arxiv.org/html/2403.10131v1
 
-### Hands-On Lab:
+### How to Get Started
 
-You'll get to work with your data or choose a sample pdf document included in repo.
+All you need is access to an Azure subscription and the ability to create Azure OpenAI resources and deployments. There's no need to enroll—just dive in and start learning with the Hands-On Workshop! You'll get to work with your data or choose a sample pdf document included in repo.
 
-1. **Pre-requisites and Setup**
+#### Hands-On Lab:
+
+
+To get started head over to  https://aka.ms/aoai-raft-workshop and begin with:
+1. **[Pre-requisites and Setup](https://aka.ms/aoai-raft-workshop)**
    - How to set up your environment and install necessary packages.
    - Creating a **Teacher GPT-4o / Student GPT-4o mini** Model deployments on Azure.
 
-2. **Step 1 – Prepare/Generate synthetic training dataset**
+2. **[Step 1 – Prepare/Generate synthetic training dataset](https://github.com/Azure-Samples/azure-openai-raft/blob/main/1_raft_datagen.ipynb)**
    - Collect Domain-Specific Documents: Gather documents relevant to the domain you want to specialize the LLM
    - Loading and Chunking Domain-Specific Documents 
      * Converting PDF documents to markdown.
@@ -54,7 +58,7 @@ You'll get to work with your data or choose a sample pdf document included in re
      * Formatting data for fine-tuning.
    - Splitting Data into Training and Test Sets
 
-2. **Step 2 –  RAFT GPT-4o-mini fine tuning**
+2. **[Step 2 –  RAFT GPT-4o-mini fine tuning](https://github.com/Azure-Samples/azure-openai-raft/blob/main/2_raft_finetuning.ipynb)**
    - Uploading the training and validation data to Azure OpenAI
    - Creating the fine tuning job
      *  Fine tune our model using the Supervised Fine Tuning technique. Azure OpenAI uses LoRA to fine tune models efficiently. LoRA (Low-Rank Adaptation) finetuning of a Large Language Model is a technique used to adapt pre-trained language models to specific tasks efficiently and with fewer computational resources.
@@ -62,13 +66,12 @@ You'll get to work with your data or choose a sample pdf document included in re
    - Analyze the fine tuned model in Azure OpenAI Studio
    - Create a new deployment with the fine tuned model
    
-3. **Step 3 –  Model evaluation**
+3. **[Step 3 –  Model evaluation](https://github.com/Azure-Samples/azure-openai-raft/blob/main/3_raft_evaluation.ipynb)**
+   - Validate that the fine tuning actually improve the model's performance on our RAG task
+   - You should see an improved model results like this: 
 
-![alt text](images/bank_eval.png)
+      ![alt text](images/bank_eval.png)
 
-### How to Get Started
-
-All you need is access to an Azure subscription and the ability to create Azure OpenAI resources and deployments. There's no need to enroll—just dive in and start learning!
 
 ---
 
