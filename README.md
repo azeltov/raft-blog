@@ -1,4 +1,14 @@
 
+## Improving Retrieval Augmented Generation with Fine Funing
+
+While most organizations that invest in Generative AI have experimented with Retrieval Augmented Generation (RAG) in order to extend an LLM's knowledge with their own internal knowledge base, many are not getting the results they expect without significant optimization work. There are several ways to optimize RAG-based systems in order to get LLM outputs that are relevant, specific to the right documents and aligned with the desired communication style. 
+
+A lot of the focus is usually put on optimizing the "Retrieval" part of RAG. However, in some cases, even when provided with documents containing elements of answer to a question, LLMs still generate answers that are inaccurate. [Retrieval Augmented Fine-Tuning (RAFT)](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674) is a novel method that focuses on improving the generation part of RAG systems by teaching the model to extract and use the right information from retrieved domain specific documents through Supervised Fine Tuning (SFT).
+
+The latest announcements around Fine Tuning in Azure OpenAI have made implementing RAFT a no-brainer for organizations looking to improve their RAG systems leveraging Azure OpenAI models. Fine-tuning on Azure OpenAI is now generally available for GPT-4o and GPT-4o-mini models, making fine tuning state of the art models a reality. Additionally, Azure OpenAI recently released a new [per-token pricing](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/pricing-update-token-based-billing-for-fine-tuning-training/ba-p/4164465) for fine tuning which makes RAFT and other fine tuning tasks both cost-efficient and highly predictable from a cost standpoint. 
+
+If you're interested in experimenting with Retrieval Augmented Fine Tuning for your Azure OpenAI models, read on!
+
 ## Unlock the Power of RAFT Fine-Tuning with Azure OpenAI: Explore Our New Self-Paced Hands-On Lab!
 
 Are you a developer looking to enhance your conversational assistant's performance? Struggling with domain adaptation and incorrect answers? Look no further! Our self-paced, hands-on workshop on **Retrieval Augmented Fine-Tuning (RAFT)** using Azure OpenAI is here  https://aka.ms/aoai-raft-workshop to help you take your AI projects to the next level.
